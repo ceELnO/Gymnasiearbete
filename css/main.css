@@ -1,0 +1,276 @@
+/* -------------------------------- General improving presets -------------------------------- */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* -------------------------------- Header styleing -------------------------------- */
+/* ---------------- Top side header ---------------- */
+
+/* --- Main box for this part --- */
+.header_1 {
+    width: 100%;
+    height: auto;
+    background-color: #2a659d;
+}
+/* --- Logo --- */
+#logo_1{
+    height: 80px;
+  }
+
+/* --- Search Bar --- */
+.search_container {
+    display: inline-block;
+    background-color: white;
+    vertical-align: top;
+    border-radius: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+}
+#search_bar {
+    margin: 0%;
+    font-size: 24px;
+    border-width: 0px;
+    border: none;
+    width: 500px;
+}
+#search_button {
+    margin: 0%;
+    font-size: 24px;
+    border-width: 0px;
+    border: none;
+    background-color: inherit;
+}
+
+/* --- Logg in icon --- */
+#acc_icon {
+    display: inline-block;
+    height: 50px;
+}
+
+/* --- Cart icon --- */
+#cart_icon {
+    display: inline-block;
+    height: 50px;
+}
+
+/* --- Hamburger menu --- */
+#navMeny {
+    font-size: 50px;
+    line-height: 70px;
+    width: 50px;
+    display: none;
+}
+#toggle {
+    display: none;
+}
+/* Item spacing */
+#logo_1, .search_container, #acc_icon {
+    margin-right: 20px;
+}
+
+/* ---------------- Navigation bar ---------------- */
+/* --- Main box for this part --- */
+.header_2 {
+    width: 100%;
+    height: auto;
+    background-color: #273143;
+}
+
+/* --- Navigaton itself --- */
+.navigation {
+    height: auto
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+}
+.navigation ul li {
+    display: inline-block;
+}
+.navigation ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+/* On link hover */
+.navigation li a:hover {
+    background-color: crimson;
+    color: lawngreen;
+}
+
+/* ---------------- Responsitivity for the header ---------------- */
+/* --- activate the hamburger menu --- */
+
+@media screen and (max-width:800px) {
+    /* --- Hamburger menu --- */
+    .header_2 {
+        display: none;
+    }
+    #navMeny {
+        display: inline-block;
+        cursor: pointer;
+    }
+    #toggle:checked+.header_2 {
+        display: block;
+    }
+    /*--- Navigation --- */
+    .navigation ul {
+        display: block;
+    }
+    .navigation ul li {
+        display: block;
+    }
+    .navigation ul li a {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #search_bar{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #search_bar{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .search_container{
+        display: none;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #acc_icon, #cart_icon, #logo_1{
+        height: 45px;
+    }
+}
+
+/* ------ Hero*/
+/*
+.hero_container {
+    width: 100%;
+    height: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#hero {
+    width: 100%;
+    height: auto;
+}
+*/
+
+/*--------- footer -----------*/
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #222020;
+    color: white;
+    text-align: center;
+    padding: 3px;
+}
+.buttonkontakt {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #008CBA;
+    color: black;
+    border-radius: 10px;
+}
+.buttonkontakt:hover {
+    background-color: #3366ff;
+    color: white;
+}
+
+/* ------ Listor ------ */
+.list {
+    height: 270px;
+    width: 300px;
+    margin-left: 10px;
+}
+.list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+.list li {
+    text-align: left;
+    display: block;
+    color: blue;
+    text-decoration: none;
+}
+.list li:last-child {
+    border-bottom: none;
+}
+.list li a:hover {
+    background-color: #111111;
+}
+.list h1 {
+    font-size: 120%;
+    margin-right: 160px;
+}
+
+
+/* ------- bild lådor -----------*/
+  
+.bildboxo {
+    border: 1px solid black;
+    height: 350px;
+    width: 280px;
+    margin: 10px;
+    float: left;
+}
+
+.bildvara {
+    height: 260px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.bildtext {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.bildbox {
+    width: 100%;
+    height: 100%;
+}
+
+.logobox {
+    width: 250px;
+    height: 120px;
+    float: left;
+}
